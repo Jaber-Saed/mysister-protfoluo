@@ -1,8 +1,56 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](/public/gitThem.png)
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a personal portfolio website built using ReactJS, Vite, and other technologies. It serves as a showcase of my skills, projects, and personal information.
+
+## Technologies Used
+
+- **ReactJS**: A JavaScript library for building user interfaces.
+- **Vite**: A fast, opinionated web development build tool that serves your code via native ES Module imports.
+- **[List other technologies used]**
+
+## Features
+
+- Responsive design for a seamless experience across devices.
+- Sections for showcasing projects, skills, and personal information.
+- [List other features]
+
+## Getting Started
+
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+
+- Node.js: Make sure Node.js is installed on your machine. You can download it from [here](https://nodejs.org/).
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Jaber-Saed/3d-protfoluo.git
+
+2. Change to the project directory:
+
+   ```bash
+   cd your-portfolio
+
+
+3. Install dependencies::
+
+   ```bash
+   npm install
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+
+
+5. build the project :
+
+   ```bash
+   npm run build
