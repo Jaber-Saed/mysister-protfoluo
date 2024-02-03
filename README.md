@@ -10,13 +10,11 @@ This is a personal portfolio website built using ReactJS, Vite, and other techno
 
 - **ReactJS**: A JavaScript library for building user interfaces.
 - **Vite**: A fast, opinionated web development build tool that serves your code via native ES Module imports.
-- **[List other technologies used]**
 
 ## Features
 
 - Responsive design for a seamless experience across devices.
 - Sections for showcasing projects, skills, and personal information.
-- [List other features]
 
 ## Getting Started
 
