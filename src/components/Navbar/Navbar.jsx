@@ -22,7 +22,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Portfolio
+        DoDo✨
       </a>
       <div className={styles.menu}>
         <img
@@ -46,11 +46,11 @@ export const Navbar = () => {
           <li>
             <a href="#experience">Experience</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#projects">Projects</a>
-          </li>
+          </li> */}
           <li>
-            <a href="#about">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

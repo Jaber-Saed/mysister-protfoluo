@@ -1,29 +1,35 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Google",
-    "startDate": "Sept, 2022",
+    "role": "Content Writer",
+    "organisation": "Freelance",
+    "startDate": "Jan, 2022",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-    "imageSrc": "history/google.png"
-  },
-  {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.png"
-  },
-  {
-    "role": "SWE Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2020",
-    "endDate": "Jun, 2020",
     "experiences": [
-      "Worked on component library",
-      "Helped create UI components"
+      "Wrote blog posts and articles for various clients",
+      "Developed SEO-optimized content that increased site traffic by 30%"
     ],
-    "imageSrc": "history/netflix.png"
+    "imageSrc": "history/freelance.png"
+  },
+  {
+    "role": "Translator",
+    "organisation": "Lingua Solutions",
+    "startDate": "Oct, 2021",
+    "endDate": "Dec, 2022",
+    "experiences": [
+      "Translated over 50 articles from English to Spanish",
+      "Worked with a team to localize marketing materials for international audiences"
+    ],
+    "imageSrc": "history/lingua.png"
+  },
+  {
+    "role": "English Tutor",
+    "organisation": "Bright Minds Academy",
+    "startDate": "Sept, 2020",
+    "endDate": "Sept, 2021",
+    "experiences": [
+      "Taught English language and literature to high school students",
+      "Developed custom lesson plans to improve students' writing and reading comprehension"
+    ],
+    "imageSrc": "history/brightminds.png"
   }
 ]

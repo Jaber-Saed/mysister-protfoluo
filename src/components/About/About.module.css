@@ -1,8 +1,9 @@
 @import "../../vars.css";
 
+/* Default (Desktop) styles */
 .container {
   position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
+  background-color: rgba(255, 236, 236, 0.6);
   border-radius: 15px;
   padding: 73px;
   z-index: 1;
@@ -15,6 +16,10 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+}
+
+.aboutItemImage {
+  margin-right: 20px;
 }
 
 .content {
@@ -64,27 +69,47 @@
   font-size: 25px;
 }
 
+/* Mobile styles (Media Query) */
 @media screen and (max-width: 830px) {
   .container {
     background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 20px 10px;
+    margin: 50px 5% 0px 5%; /* Adjusting margins for mobile */
+  }
+
+  .title {
+    font-size: 28px; /* Smaller font size for mobile */
+    text-align: center;
   }
 
   .content {
-    flex-direction: column;
+    flex-direction: column; /* Stack content vertically on mobile */
   }
 
   .aboutImage {
-    display: none;
+    display: none; /* Hide image on mobile for simpler layout */
   }
 
   .aboutItems {
-    margin-top: 29px;
+    margin-top: 20px;
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    padding: 15px;
+  }
+
+  .aboutItemImage {
+    margin-bottom: 15px; /* Adjust margin for vertical alignment */
+  }
+
+  .aboutItem h3 {
+    font-size: 22px; /* Adjusted font size for mobile */
+  }
+
+  .aboutItem p {
+    font-size: 18px; /* Adjusted font size for mobile */
+    text-align: center;
   }
 }

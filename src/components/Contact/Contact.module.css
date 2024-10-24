@@ -1,64 +1,84 @@
-@import "../../vars.css";
-
+/* Default (Desktop) styles */
 .container {
-  color: var(--color-text);
-  margin-top: 120px;
-  background-color: var(--color-secondary);
+  background-color: #ffafee; /* Soft pink background */
+  color: #333; /* Darker text for contrast */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.innerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text h2 {
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 4px;
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #333; /* Dark text for readability */
 }
 
 .text p {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #555; /* Slightly lighter for subtext */
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   list-style: none;
-  gap: 26px;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  margin-bottom: 0;
+}
+
+.link img {
+  width: 26px;
+  margin-right: 8px;
 }
 
 .link a {
-  color: var(--color-text);
+  color: #333; /* Dark link color */
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
+.link a:hover {
+  color: #7f56d9; /* Purple hover effect for links */
+}
+
+/* Mobile styles (Media Query) */
 @media screen and (max-width: 830px) {
   .container {
-    flex-direction: column;
-    gap: 23px;
+    padding: 40px 10px; /* Reduce padding for mobile */
   }
 
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .text h2 {
+    font-size: 24px; /* Adjust heading size for mobile */
+  }
+
+  .text p {
+    font-size: 16px; /* Adjust subtext size for mobile */
   }
 
   .links {
-    align-items: center;
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px; /* Reduce gap between links */
+  }
+
+  .link a {
+    font-size: 14px; /* Adjust link size for mobile */
+  }
+
+  .link img {
+    width: 22px; /* Adjust icon size for mobile */
   }
 }

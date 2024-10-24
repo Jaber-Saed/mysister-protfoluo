@@ -10,11 +10,16 @@ const {
   aboutItems,
   aboutItem,
   aboutItemText,
+  aboutItemImage,
 } = styles;
 
 const renderAboutItem = (icon, title, description) => (
   <li className={aboutItem}>
-    <img src={getImageUrl(`about/${icon}`)} alt={`${title} - ${icon}`} />
+    <img
+      src={getImageUrl(`about/${icon}`)}
+      alt={`${title} - ${icon}`}
+      className={aboutItemImage}
+    />
     <div className={aboutItemText}>
       <h3>{title}</h3>
       <p>{description}</p>
@@ -34,19 +39,19 @@ export const About = () => {
         />
         <ul className={aboutItems}>
           {renderAboutItem(
-            "cursorIcon.png",
-            "Frontend Developer",
-            "I'm a frontend developer with experience..."
+            "writer.png",
+            "Creative Writer",
+            "I excel at crafting engaging stories, articles, and creative content that captivates readers. From fiction to non-fiction, I use language to evoke emotion, build narratives, and bring ideas to life...."
           )}
           {renderAboutItem(
-            "serverIcon.png",
-            "Backend Developer",
-            "I have experience developing fast and optimized..."
+            "teach.png",
+            "Educator",
+            "I have experience teaching English concepts, including grammar, writing, and literary analysis. Whether in a classroom setting or through tutoring, I guide students in developing their skills and confidence in reading and writing...."
           )}
           {renderAboutItem(
-            "cursorIcon.png",
-            "UI Designer",
-            "I have designed multiple landing pages and have created..."
+            "translator.png",
+            "Translator",
+            "Fluent in translating texts between [insert language pair], I ensure that meaning, tone, and nuance are preserved across languages. I specialize in translating literary works, articles, and other written materials with accuracy and cultural sensitivity...."
           )}
         </ul>
       </div>
