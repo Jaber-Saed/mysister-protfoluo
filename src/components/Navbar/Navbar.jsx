@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -27,14 +26,14 @@ export const Navbar = () => {
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
-          src={
-            isSmallScreen
+          src={isSmallScreen
               ? menuOpen
                 ? getImageUrl("nav/closeIcon.png")
                 : getImageUrl("nav/menuIcon.png")
               : null
           }
           onClick={() => setMenuOpen(!menuOpen)}
+          alt="Menu button"
         />
         <ul
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
@@ -46,9 +45,6 @@ export const Navbar = () => {
           <li>
             <a href="#experience">Experience</a>
           </li>
-          {/* <li>
-            <a href="#projects">Projects</a>
-          </li> */}
           <li>
             <a href="#contact">Contact</a>
           </li>

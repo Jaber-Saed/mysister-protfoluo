@@ -60,11 +60,7 @@
     gap: 13px;
     border-radius: 10px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 173, 241, 0.2) 0%,
-      rgb(255, 171, 230) 100%
-    );
+    background: #ffafee;
     padding: 24px 33px;
     box-shadow: 0 0 4px 0 rgba(255, 246, 246, 0.25);
   }
