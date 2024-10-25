@@ -20,14 +20,16 @@ export const Hero = () => {
         </a>
       </div>
       <img
-        src={getImageUrl("hero/heroImage.webp")}
+        src={getImageUrl("hero/heroImage-pc.webp")}
         alt="Hero image of me"
         className={styles.heroImg}
-        sizes="(max-width: 600px) 480px, 
-           (max-width: 900px) 800px, 
-           1200px"
-        width="761"
+        srcSet={`
+        ${getImageUrl("hero/heroImage-mob.webp")} 600w,
+        ${getImageUrl("hero/heroImage-pc.webp")} 1200w`}
+        sizes="(max-width: 600px) 100vw, 
+           (min-width: 601px) 1200px"
       />
+
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
