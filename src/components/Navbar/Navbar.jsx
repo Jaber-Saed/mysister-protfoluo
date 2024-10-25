@@ -20,6 +20,8 @@ export const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+    console.log("Made with ❤️ by the best software engineer Jaber!");
+
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">

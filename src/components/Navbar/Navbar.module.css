@@ -11,10 +11,30 @@
 }
 
 .title {
-  font-size: 30px;
+    font-size: 30px;
   font-weight: 600;
   text-decoration: none;
-  color: var(--color-text);
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 150, 1) 0%,
+    rgba(0, 204, 255, 1) 100%
+  ); /* Bright gradient */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px 5px rgba(255, 198, 198, 0.3); /* Adding text shadow */
+  animation: bounce 2s infinite; /* Bounce animation */
+  transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transform on hover */
+}
+
+/* Keyframes for bounce animation */
+
+
+/* Hover effect to scale and add glow */
+.title:hover {
+  transform: scale(1.1); /* Scale up slightly */
+  text-shadow: 0 0 20px rgba(255, 0, 150, 0.8), 0 0 30px rgba(0, 204, 255, 0.8); /* Glow effect */
 }
 
 .menu {

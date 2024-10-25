@@ -1,20 +1,22 @@
 [
   {
-    "role": "Content Writer",
-    "organisation": "Freelance",
-    "startDate": "Jan, 2022",
+    "role": "English Tutor",
+    "organisation": "Bright Minds Academy",
+    "startDate": "Jan, 2023",
     "endDate": "Present",
+
     "experiences": [
-      "Wrote blog posts and articles for various clients",
-      "Developed SEO-optimized content that increased site traffic by 30%"
+      "Taught English language and literature to high school students",
+      "Developed custom lesson plans to improve students' writing and reading comprehension"
     ],
-    "imageSrc": "history/freelance.png"
+    "imageSrc": "history/brightminds.png"
   },
+
   {
     "role": "Translator",
     "organisation": "Lingua Solutions",
-    "startDate": "Oct, 2021",
-    "endDate": "Dec, 2022",
+    "startDate": "Oct, 2022",
+    "endDate": "Dec, 2020",
     "experiences": [
       "Translated over 50 articles from English to Spanish",
       "Worked with a team to localize marketing materials for international audiences"
@@ -22,14 +24,14 @@
     "imageSrc": "history/lingua.png"
   },
   {
-    "role": "English Tutor",
-    "organisation": "Bright Minds Academy",
+    "role": "Content Writer",
+    "organisation": "Freelance",
     "startDate": "Sept, 2020",
-    "endDate": "Sept, 2021",
+    "endDate": "Sept, 2018",
     "experiences": [
-      "Taught English language and literature to high school students",
-      "Developed custom lesson plans to improve students' writing and reading comprehension"
+      "Wrote blog posts and articles for various clients",
+      "Developed SEO-optimized content that increased site traffic by 30%"
     ],
-    "imageSrc": "history/brightminds.png"
+    "imageSrc": "history/freelance.png"
   }
 ]
