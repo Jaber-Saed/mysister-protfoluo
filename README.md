@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![Portfolio Preview](/public/gitThem.png)
+![Portfolio Preview](/public/preview.png)
 
 ## Introduction
 
