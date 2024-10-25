@@ -23,7 +23,7 @@
 .text p {
   font-size: 18px;
   margin-bottom: 25px;
-  color: #555; /* Slightly lighter for subtext */
+  color: #333; /* Slightly lighter for subtext */
 }
 
 .links {
@@ -82,3 +82,4 @@
     width: 22px; /* Adjust icon size for mobile */
   }
 }
+

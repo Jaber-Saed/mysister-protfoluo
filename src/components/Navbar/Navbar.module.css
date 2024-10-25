@@ -53,6 +53,8 @@
     cursor: pointer;
   }
 
+  
+
   .menuItems {
     display: none;
     flex-direction: column;
@@ -69,4 +71,20 @@
     display: flex;
     z-index: 1;
   }
+}
+
+
+.menuBtn {
+  display: none; /* Default to hidden */
+}
+
+@media (max-width: 600px) {
+  .menuBtn {
+    display: block; /* Only show on small screens */
+  }
+}
+
+.menuBtn {
+  width: 40px;
+  height: 40px;
 }

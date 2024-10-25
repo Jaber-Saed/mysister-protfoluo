@@ -20,9 +20,13 @@ export const Hero = () => {
         </a>
       </div>
       <img
-        src={getImageUrl("hero/heroImage.png")}
+        src={getImageUrl("hero/heroImage.webp")}
         alt="Hero image of me"
         className={styles.heroImg}
+        sizes="(max-width: 600px) 480px, 
+           (max-width: 900px) 800px, 
+           1200px"
+        width="761"
       />
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />

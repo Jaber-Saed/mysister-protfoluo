@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect, useCallback } from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -7,16 +6,18 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
 
+  const getMenuIconSrc = () =>
+    isSmallScreen
+      ? getImageUrl(menuOpen ? "nav/closeIcon.png" : "nav/menuIcon.png")
+      : "";
+
+  const toggleMenu = useCallback(() => setMenuOpen((prev) => !prev), []);
+
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 600);
-    };
+    const handleResize = () => setIsSmallScreen(window.innerWidth <= 600);
 
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -27,17 +28,14 @@ export const Navbar = () => {
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
-          src={
-            isSmallScreen
-              ? menuOpen
-                ? getImageUrl("nav/closeIcon.png")
-                : getImageUrl("nav/menuIcon.png")
-              : null
-          }
-          onClick={() => setMenuOpen(!menuOpen)}
+          alt="Menu"
+          src={getMenuIconSrc()}
+          onClick={toggleMenu}
+          width="40"
+          height="40"
         />
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+          className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
           onClick={() => setMenuOpen(false)}
         >
           <li>
@@ -46,9 +44,7 @@ export const Navbar = () => {
           <li>
             <a href="#experience">Experience</a>
           </li>
-          {/* <li>
-            <a href="#projects">Projects</a>
-          </li> */}
+          {/* <li><a href="#projects">Projects</a></li> */}
           <li>
             <a href="#contact">Contact</a>
           </li>
