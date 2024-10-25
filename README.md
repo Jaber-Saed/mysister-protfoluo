@@ -29,7 +29,7 @@ Follow these instructions to set up and run the project on your local machine.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Jaber-Saed/3d-protfoluo.git
+   git clone https://github.com/Jaber-Saed/mysister-protfoluo.git
 
 2. Change to the project directory:
 
