@@ -7,6 +7,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
 
 function App() {
+  console.log("Made with love by the best software engineer Jaber!");
   return (
     <div className={styles.App}>
       <Navbar />
