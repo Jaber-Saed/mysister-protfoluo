@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   const getMenuIconSrc = () =>
     isSmallScreen
-      ? getImageUrl(menuOpen ? "nav/closeIcon.png" : "nav/menuIcon.png")
+      ? getImageUrl(menuOpen ? "nav/closeIcon.webp" : "nav/menuIcon.webp")
       : "";
 
   const toggleMenu = useCallback(() => setMenuOpen((prev) => !prev), []);
