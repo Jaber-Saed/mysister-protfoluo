@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![Portfolio Preview](/public/preview.png)
+![Portfolio Preview](/public/preview.webp)
 
 ## Introduction
 
